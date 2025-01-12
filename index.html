@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajashekar - Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="themes.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<style>
+    
+</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">R-07</div>
+            <!-- Notice  -->
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="contact">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="moon"></i>
+                </button>
+            </div>
+        
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                
+                <div class="hero-text animate-fade-in">
+                    <div class="badge animate-slide-up">
+                        <i data-lucide="code-2"></i>
+                        <span>backend_developer</span>
+                        <i data-lucide="sparkles" class="sparkle"></i>
+                    </div>
+                    <h1 class="animate-slide-up">
+                        Hi, I'm <span class="gradient-text">Rajashekar</span>
+                        <span class="dot">.</span>
+                    </h1>
+                    <p class="animate-slide-up">
+                        Building efficient, scalable, and secure backend solutions that power modern applications.
+                        <span class="highlight">Turning complex problems into elegant solutions.</span>
+                    </p>
+                    <div class="hero-buttons animate-slide-up">
+                        <button class="btn btn-primary">
+                            Hire Me
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn btn-secondary">View My Work</button>
+                    </div>
+                </div>
+                <div class="hero-image animate-slide-up">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80&w=600" 
+                             alt="Developer Setup">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-heading">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m a backend developer focused on building scalable, secure, and efficient server-side applications. I use JavaScript to create solutions that help businesses grow and run smoothly.</p>
+                    <p>As an admirer of MS Dhoni, I draw inspiration from his leadership, calm demeanor, and strategic thinking. Just as he led India to victory, I bring the same level of discipline and methodical approach to my development work, ensuring quality and consistency in every project.</p>
+                    <div class="qualities">
+                        <div class="quality">
+                            <i data-lucide="target"></i>
+                            <h3>Disciplined</h3>
+                        </div>
+                        <div class="quality">
+                            <i data-lucide="code"></i>
+                            <h3>Efficient</h3>
+                        </div>
+                        <div class="quality">
+                            <i data-lucide="database"></i>
+                            <h3>Quality-Focused</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&q=80&w=600" 
+                         alt="Developer workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-heading">Technical Skills</h2>
+            <div class="skills-grid"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-heading">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" 
+                             alt="Ellenki College Hub">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ellenki College Hub(Pending)</h3>
+                        <p>A comprehensive web application for managing college resources, including student records,
+                            course materials, and administrative tasks.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i data-lucide="github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card coming-soon">
+                    <div class="project-content">
+                        <p>More projects coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-heading">Get in Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h3>Connect With Me</h3>
+                        <div class="contact-links">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajashekarpatha07@gmail.com" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <!-- FontAwesome Gmail icon -->
+                                rajashekarpatha07@gmail.com
+                            </a>
+                            
+                            
+                            <a href="#">
+                                <i data-lucide="linkedin"></i>
+                                LinkedIn Profile
+                            </a>
+                            <a href="https://github.com/rajashekarpatha07">
+                                <i data-lucide="github"></i>
+                                GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Rajashekar. All rights reserved.</p>
+                <button id="scroll-top" class="scroll-top">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
